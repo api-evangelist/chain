@@ -1,0 +1,36 @@
+generated: '2026-07-18'
+method: searched
+source: https://chain.com/documentation/authentication
+docs: https://chain.com/documentation/authentication
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  scheme: bearer
+  oauth2_flows: []
+notes: >-
+  Chain uses API-key authentication passed as a Bearer token in the Authorization header. Keys are
+  environment-scoped by prefix: sk_sandbox_ for the testing environment and sk_live_ for production
+  (live keys move real money). No OAuth is documented.
+schemes:
+- name: bearerApiKey
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  format: 'Bearer [example key] (live) / Bearer [example key] (sandbox)'
+  key_prefixes:
+    live: sk_live_
+    sandbox: sk_sandbox_
+headers:
+- name: Authorization
+  required: true
+  description: Bearer token containing the API key.
+- name: Content-Type
+  required: true
+  description: Must be application/json for request bodies.
+- name: X-Business-Id
+  required: false
+  description: Required when managing multiple businesses under one account.
+- name: X-Idempotency-Key
+  required: false
+  description: Unique key for safe request retries.
