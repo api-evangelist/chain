@@ -1,8 +1,27 @@
 aid: chain
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/chain.png
 name: Chain
-description: Chain is a company surfaced as a portfolio company of 500-global, pantera-capital and added
-  to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment
-  pipeline.
+description: >-
+  Chain is a stablecoin payments infrastructure platform that lets enterprises move money
+  globally across both traditional banking rails and digital-currency networks. Its unified
+  REST API covers funding, payouts and payees; virtual and physical card issuing; wallet
+  registration with compliance screening; and a double-entry ledger for reconciliation. Chain
+  connects ACH, Fedwire, FedNow, SEPA, Faster Payments, Visa and Mastercard with multi-stablecoin
+  support (USDC, USDT, USDP, RLUSD) for real-time settlement and payouts to 200+ countries. The
+  platform exposes API-key (Bearer) authentication, an idempotency-key header, webhooks with
+  signature verification, and separate sandbox and live environments for developers.
 url: https://raw.githubusercontent.com/api-evangelist/chain/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,15 +32,87 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Payments
+- Stablecoin
+- Cryptocurrency
+- Blockchain
+- Financial Services
+- Wallets
+- Cards
+- Cross-Border Payments
+- API
+apis:
+- name: Chain API
+  description: >-
+    Chain's unified REST API for stablecoin payments (funding, payouts, payees), card issuing,
+    wallets, and a double-entry ledger. Bearer API-key auth with sandbox and live key prefixes
+    (sk_sandbox_ / sk_live_) and an X-Idempotency-Key header for safe retries.
+  humanURL: https://chain.com/documentation
+  baseURL: https://api.chain.com/v1
+  properties:
+  - type: Documentation
+    url: https://chain.com/documentation
+  - type: Authentication
+    url: https://chain.com/documentation/authentication
+  - type: Webhooks
+    url: https://chain.com/documentation/webhooks
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/chain-domain-security.yml
 - type: Website
   url: https://chain.com
+- type: DeveloperPortal
+  url: https://chain.com/documentation
+- type: Documentation
+  url: https://chain.com/documentation
+- type: APIReference
+  url: https://chain.com/documentation
+- type: GettingStarted
+  url: https://chain.com/documentation
+- type: Authentication
+  url: authentication/chain-authentication.yml
+- type: Webhooks
+  url: https://chain.com/documentation/webhooks
+- type: SDKs
+  url: https://chain.com/documentation/sdks
+- type: Packages
+  url: packages/chain-packages.yml
+- type: Conventions
+  url: conventions/chain-conventions.yml
+- type: Idempotency
+  url: conventions/chain-conventions.yml
+- type: Lifecycle
+  url: lifecycle/chain-lifecycle.yml
+- type: Sandbox
+  url: sandbox/chain-sandbox.yml
+- type: LLMsTxt
+  url: llms/chain-llms.txt
+- type: Blog
+  url: https://chain.com/blog
+- type: Support
+  url: https://chain.com/support
+- type: ChangeLog
+  url: https://chain.com/developers/changelog
+- type: StatusPage
+  url: https://chain.com/developers/status
+- type: GitHubOrganization
+  url: https://github.com/chain
+- type: SignUp
+  url: https://app.chain.com
+- type: TermsOfService
+  url: https://chain.com/terms
+- type: PrivacyPolicy
+  url: https://chain.com/privacy-policy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

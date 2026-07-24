@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://chain.com/developers/status
+versioning:
+  scheme: uri-path
+  current: v1
+status_page: https://chain.com/developers/status
+status_components:
+- Api
+- Dashboards
+- Webhooks
+- ACH Transfers
+- Wire Transfers
+- Cards
+- Check Transfers and Deposits
+- Real-Time Payments
+- Sandbox
+sla:
+  url: null
+  uptime_target: null
+  observed: 100% uptime over the past 90 days (status page, Dec 2025)
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No deprecation policy or RFC 8594 Sunset/Deprecation header support documented.
+changelog: https://chain.com/developers/changelog

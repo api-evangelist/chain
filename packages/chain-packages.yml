@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+source: https://chain.com/documentation/sdks
+notes: >-
+  Chain documents official Node.js and Python client libraries on its SDKs page. The two verified,
+  first-party packages below are published under the github.com/chain organization (whose homepage
+  is https://chain.com). They date from the Chain Core / Chain.com API era; the SDKs page advertises
+  current Node.js and Python libraries but the exact current package names were not resolvable at
+  probe time. Registry descriptions are quoted verbatim.
+packages:
+- language: javascript
+  registry: npm
+  name: chain-sdk
+  url: https://www.npmjs.com/package/chain-sdk
+  install: npm install chain-sdk
+  version: 1.2.1
+  description: The Official Node.js SDK for Chain Core
+  repository: https://github.com/chain/chain
+  official: true
+- language: python
+  registry: pypi
+  name: chain-sdk
+  url: https://pypi.org/project/chain-sdk/
+  install: pip install chain-sdk
+  version: '1.1'
+  description: Official Python software development kit for the Chain.com API
+  repository: https://github.com/chain-engineering/chain-python
+  official: true

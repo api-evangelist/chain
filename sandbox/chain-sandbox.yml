@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://chain.com/documentation/authentication
+notes: >-
+  Chain publishes a separate sandbox environment for testing without moving real funds. Captured from
+  the authentication and documentation pages. No specific magic test values (test cards, test bank
+  accounts) were published in a resolvable form at probe time, so none are asserted here.
+environments:
+  sandbox:
+    key_prefix: sk_sandbox_
+    purpose: Testing without moving real funds.
+    rate_limit: 100 requests/min per API key
+    status_component: Sandbox (listed on https://chain.com/developers/status)
+  live:
+    key_prefix: sk_live_
+    purpose: Production; moves real money.
+    rate_limit: 1000 requests/min per API key
+test_values:
+  documented: false
+  notes: No published test card / test bank-account fixtures found at probe time.

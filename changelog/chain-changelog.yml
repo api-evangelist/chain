@@ -1,0 +1,18 @@
+generated: '2026-07-18'
+method: searched
+source: https://chain.com/developers/changelog
+scheme: dated-newsletter
+current_version: v1
+notes: >-
+  Chain publishes product updates as a dated developer changelog / newsletter rather than versioned
+  release notes. Only the most recent entry surfaced at probe time; the live page is the source of
+  truth for the full window.
+entries:
+- date: '2025-01-30'
+  title: Q2 2025 Newsletter
+  breaking: false
+  highlights:
+  - API event log filtering
+  - Event page improvements
+  - Check Transfer
+  - Additional enhancements

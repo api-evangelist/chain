@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source: https://chain.com/documentation/authentication
+docs: https://chain.com/documentation
+notes: >-
+  Cross-cutting request/response semantics captured from Chain's published documentation. Grounded
+  in the authentication reference; endpoint-level pagination/error-envelope shapes were not fully
+  documented in a machine-readable spec at probe time and are left unasserted rather than guessed.
+authentication:
+  style: bearer-api-key
+  header: Authorization
+  key_prefixes: {live: sk_live_, sandbox: sk_sandbox_}
+  ref: authentication/chain-authentication.yml
+idempotency:
+  supported: true
+  header: X-Idempotency-Key
+  scope: mutating requests
+  description: Unique key supplied by the client for safe retries of write operations.
+multi_tenancy:
+  header: X-Business-Id
+  description: Selects the business context when an account manages multiple businesses.
+content_type:
+  request: application/json
+  response: application/json
+rate_limiting:
+  documented: true
+  per: api-key
+  published_limits:
+    sandbox: 100 requests/min
+    production: 1000 requests/min
+  headers: not documented
+versioning:
+  scheme: uri-path
+  current: v1
+environments:
+  sandbox: sk_sandbox_ keys / testing without moving real funds
+  live: sk_live_ keys / moves real money
+webhooks:
+  documented: true
+  signature_verification: true
+  ref: https://chain.com/documentation/webhooks
