@@ -64,6 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Chain is a company surfaced as a portfolio company of 500-global, pantera-capital and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Chain is a stablecoin payments infrastructure platform that lets enterprises move money globally across both traditional banking rails and digital-currency networks. Its unified REST API covers funding, payouts and payees; virtual and physical card issuing; wallet registration with compliance screening; and a double-entry ledger for reconciliation. Chain connects ACH, Fedwire, FedNow, SEPA, Faster Payments, Visa and Mastercard with multi-stablecoin support (USDC, USDT, USDP, RLUSD) for real-time settlement and payouts to 200+ countries. The platform exposes API-key (Bearer) authentication, an idempotency-key header, webhooks with signature verification, and separate sandbox and live environments for developers.
 
-Backed by: 500-global, pantera-capital — https://chain.com
+**Areas:** Company · Payments · Stablecoins · Cryptocurrency · Blockchain · Financial Services · Wallets · Cards · Cross-Border Payments
+
+## Chain on APIs.io
+
+Everything profiled for Chain is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/chain/](https://apis.io/providers/chain/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Chain API](https://apis.io/apis/chain/chain-api/) — Chain's unified REST API for stablecoin payments (funding, payouts, payees), card issuing, wallets, and a double-entry ledger. Bearer API-key auth with…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Chain Authentication](https://apis.io/security/chain/chain-authentication/)
+- [Chain Domain Security](https://apis.io/security/chain/chain-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://chain.com)
+- [Documentation](https://chain.com/documentation)
+- [Getting started](https://chain.com/documentation)
+- [API reference](https://chain.com/documentation)
+- [Sign up](https://app.chain.com)
+- [Support](https://chain.com/support)
+- [Changelog](https://chain.com/developers/changelog)
+- [Blog](https://chain.com/blog)
+- [Terms of service](https://chain.com/terms)
+- [Privacy policy](https://chain.com/privacy-policy)
+- [GitHub](https://github.com/chain)
+- [Status](https://chain.com/developers/status)
+
+## API Evangelist rating
+
+**Kin Score 32.4** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 71.4 |
+| Access clarity | 27.6 |
+
+**Agent readiness 9.6** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | documented (partial credit) |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.9** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/chain/](https://apis.io/providers/chain/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Chain: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/chain/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
